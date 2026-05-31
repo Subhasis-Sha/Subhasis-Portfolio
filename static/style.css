@@ -19,6 +19,15 @@
     width: 0ch;
     animation: typing 16s steps(25) infinite;
 }
+@media screen and (max-width: 768px){
+    #nameXproffession {
+    display: block;
+}
+    #nameXproffession::after {
+        padding-left: 40px;
+        display: block;
+    }
+}
 @keyframes typing {
 
     0% {

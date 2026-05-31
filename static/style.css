@@ -21,11 +21,21 @@
 }
 @media screen and (max-width: 768px){
     #nameXproffession {
-    display: block;
-}
-    #nameXproffession::after {
-        padding-left: 40px;
         display: block;
+        font-size: 2rem;
+    }
+    #nameXproffession::after {
+        display: block;
+        margin: 0.5rem auto 0;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 480px){
+    #nameXproffession {
+        font-size: 1.6rem;
+    }
+    #nameXproffession::after {
+        font-size: 1.1rem;
     }
 }
 @keyframes typing {

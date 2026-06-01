@@ -1,11 +1,9 @@
 .backdrop-filter {
     backdrop-filter: blur(12px);
 }
+
 #nameXproffession {
     position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
 }
 
 #nameXproffession::after {
@@ -19,27 +17,15 @@
     width: 0ch;
     animation: typing 16s steps(25) infinite;
 }
-@media screen and (max-width: 768px){
-    #nameXproffession {
-        display: block;
-        font-size: 2rem;
-    }
+
+@media screen and (max-width: 768px) {
     #nameXproffession::after {
         display: block;
         margin: 0.5rem auto 0;
-        font-size: 1.4rem;
     }
 }
-@media screen and (max-width: 480px){
-    #nameXproffession {
-        font-size: 1.6rem;
-    }
-    #nameXproffession::after {
-        font-size: 1.1rem;
-    }
-}
-@keyframes typing {
 
+@keyframes typing {
     0% {
         content: "| Software Engineer";
         width: 0ch;
@@ -111,20 +97,21 @@
     }
 }
 
- .hero {
-     background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)), url('../images/coding_laptop.png');
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     opacity: 0.6;
- }
-  @media (min-width: 768px) {
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)), url('../images/coding_laptop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
 
-            .vh-md-100 {
-                height: 100vh !important;
-            }
+@media (min-width: 768px) {
 
-        }
+    .vh-md-100 {
+        height: 100vh !important;
+    }
+
+}
 
 /* Custom Portfolio Styles */
 .nav-sofia {
@@ -160,12 +147,35 @@
     transform: scale(1.15);
 }
 
-.social-btn-linkedin:hover { background-color: #0a66c2 !important; border-color: #0a66c2 !important; }
-.social-btn-github:hover { background-color: #24292f !important; border-color: #24292f !important; }
-.social-btn-instagram:hover { background-color: #e1306c !important; border-color: #e1306c !important; }
-.social-btn-hackerrank:hover { background-color: #2ec866 !important; border-color: #2ec866 !important; }
-.social-btn-leetcode:hover { background-color: #ffa116 !important; border-color: #ffa116 !important; }
-.social-btn-twitter:hover { background-color: #000 !important; border-color: #000 !important; }
+.social-btn-linkedin:hover {
+    background-color: #0a66c2 !important;
+    border-color: #0a66c2 !important;
+}
+
+.social-btn-github:hover {
+    background-color: #24292f !important;
+    border-color: #24292f !important;
+}
+
+.social-btn-instagram:hover {
+    background-color: #e1306c !important;
+    border-color: #e1306c !important;
+}
+
+.social-btn-hackerrank:hover {
+    background-color: #2ec866 !important;
+    border-color: #2ec866 !important;
+}
+
+.social-btn-leetcode:hover {
+    background-color: #ffa116 !important;
+    border-color: #ffa116 !important;
+}
+
+.social-btn-twitter:hover {
+    background-color: #000 !important;
+    border-color: #000 !important;
+}
 
 .form-floating-custom .form-control {
     border-radius: 0.75rem;
@@ -229,12 +239,29 @@
     height: 10px;
 }
 
-.w-pct-1 { width: 1% !important; }
-.w-pct-2 { width: 2% !important; }
-.w-pct-30 { width: 30% !important; }
-.w-pct-70 { width: 70% !important; }
-.w-pct-85 { width: 85% !important; }
-.w-pct-90 { width: 90% !important; }
+.w-pct-1 {
+    width: 1% !important;
+}
+
+.w-pct-2 {
+    width: 2% !important;
+}
+
+.w-pct-30 {
+    width: 30% !important;
+}
+
+.w-pct-70 {
+    width: 70% !important;
+}
+
+.w-pct-85 {
+    width: 85% !important;
+}
+
+.w-pct-90 {
+    width: 90% !important;
+}
 
 .contact-icon-bg {
     width: 50px;
@@ -248,5 +275,3 @@
 .email-hover:hover {
     color: #0dcaf0 !important;
 }
-
-

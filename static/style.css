@@ -1,28 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-midnight: #0b0f19;
+    --bg-sidebar-1: #03050a;
+    --bg-sidebar-2: #070b13;
+    --card-bg: rgba(15, 23, 42, 0.45);
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    
+    --accent-cyan: #00f0ff;
+    --accent-purple: #c084fc;
+    --accent-emerald: #34d399;
+    --accent-amber: #fbbf24;
+    --accent-rose: #fb7185;
+    
+    --font-sofia: 'Sofia', sans-serif;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', "Segoe UI", sans-serif !important;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-midnight);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .backdrop-filter {
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 #nameXproffession {
     position: relative;
+    display: inline-block;
+    min-height: 2.2rem;
+    vertical-align: middle;
 }
 
 #nameXproffession::after {
     content: "| Software Engineer";
-    color: white;
+    color: var(--accent-cyan);
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid #0dcaf0;
+    border-right: 3px solid var(--accent-cyan);
     display: inline-block;
     vertical-align: middle;
     width: 0ch;
     animation: typing 16s steps(25) infinite;
-}
-
-@media screen and (max-width: 768px) {
-    #nameXproffession::after {
-        display: block;
-        margin: 0.5rem auto 0;
-    }
+    font-size: clamp(1.1rem, 1.2vw + 0.8rem, 1.8rem) !important;
 }
 
 @keyframes typing {
@@ -30,67 +68,54 @@
         content: "| Software Engineer";
         width: 0ch;
     }
-
     10% {
         content: "| Software Engineer";
         width: 20ch;
     }
-
     20% {
         content: "| Software Engineer";
         width: 20ch;
     }
-
     30% {
         content: "| Software Engineer";
         width: 0ch;
     }
-
     31% {
         content: "| DevSecOps Engineer";
         width: 0ch;
     }
-
     40% {
         content: "| DevSecOps Engineer";
         width: 22ch;
     }
-
     50% {
         content: "| DevSecOps Engineer";
         width: 22ch;
     }
-
     60% {
         content: "| DevSecOps Engineer";
         width: 0ch;
     }
-
     61% {
         content: "| Cyber Security";
         width: 0ch;
     }
-
     70% {
         content: "| Cyber Security";
         width: 17ch;
     }
-
     80% {
         content: "| Cyber Security";
         width: 17ch;
     }
-
     90% {
         content: "| Cyber Security";
         width: 0ch;
     }
-
     91% {
         content: "| Cloud Engineer";
         width: 0ch;
     }
-
     100% {
         content: "| Cloud Engineer";
         width: 18ch;
@@ -98,53 +123,224 @@
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 0, 0.8)), url('../images/coding_laptop.png');
+    background-image: linear-gradient(rgba(11, 15, 25, 0.4), rgba(3, 7, 18, 0.95)), url('../images/coding_laptop.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.85;
 }
 
 @media (min-width: 768px) {
-
     .vh-md-100 {
         height: 100vh !important;
     }
-
 }
 
 /* Custom Portfolio Styles */
 .nav-sofia {
-    font-family: 'Sofia', sans-serif;
+    font-family: var(--font-sofia);
 }
 
 .home-logo {
     width: 60px;
     height: 60px;
     object-fit: cover;
+    border: 2px solid var(--accent-cyan);
 }
 
-.project-card {
-    border-radius: 1.25rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+/* Core layouts */
+.bg-dark-midnight {
+    background-color: var(--bg-midnight) !important;
+    color: var(--text-primary) !important;
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3) !important;
+/* Sidebars styling */
+.portfolio-sidebar-brand {
+    background-color: var(--bg-sidebar-1) !important;
+    border-right: 1px solid var(--border-glass);
 }
 
+.portfolio-sidebar-nav {
+    background-color: var(--bg-sidebar-2) !important;
+    border-right: 1px solid var(--border-glass);
+}
+
+/* Elegant Custom Nav Links */
+.portfolio-nav-item {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.portfolio-nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 0.75rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent !important;
+    background: transparent !important;
+    text-decoration: none;
+}
+
+.portfolio-nav-link:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    transform: translateX(4px);
+}
+
+.portfolio-nav-link.active-cyan {
+    color: var(--accent-cyan) !important;
+    background: rgba(0, 240, 255, 0.06) !important;
+    border-color: rgba(0, 240, 255, 0.2) !important;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+}
+
+.portfolio-nav-link.active-purple {
+    color: var(--accent-purple) !important;
+    background: rgba(168, 85, 247, 0.06) !important;
+    border-color: rgba(168, 85, 247, 0.2) !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.portfolio-nav-link.active-emerald {
+    color: var(--accent-emerald) !important;
+    background: rgba(16, 185, 129, 0.06) !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+}
+
+.portfolio-nav-link.active-amber {
+    color: var(--accent-amber) !important;
+    background: rgba(245, 158, 11, 0.06) !important;
+    border-color: rgba(245, 158, 11, 0.2) !important;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.1);
+}
+
+.portfolio-nav-link.active-rose {
+    color: var(--accent-rose) !important;
+    background: rgba(244, 63, 94, 0.06) !important;
+    border-color: rgba(244, 63, 94, 0.2) !important;
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-sidebar-brand, .portfolio-sidebar-nav {
+        border-right: none !important;
+        border-bottom: 1px solid var(--border-glass) !important;
+    }
+    .portfolio-nav-link:hover {
+        transform: none !important;
+    }
+}
+
+/* Content Columns & Radial Ambient Glow */
+.portfolio-content-col {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg-midnight) !important;
+    z-index: 1;
+}
+
+.portfolio-content-col::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(140px);
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.glow-skills::before {
+    background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
+}
+.glow-projects::before {
+    background: radial-gradient(circle, var(--accent-emerald) 0%, transparent 70%);
+}
+.glow-journey::before {
+    background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+}
+.glow-hire::before {
+    background: radial-gradient(circle, var(--accent-amber) 0%, transparent 70%);
+}
+.glow-contact::before {
+    background: radial-gradient(circle, var(--accent-rose) 0%, transparent 70%);
+}
+
+/* Universal Glass Card Overrides */
+.glass-card {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 1.25rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7) !important;
+}
+
+.glass-card-glow-cyan:hover {
+    border-color: rgba(0, 240, 255, 0.3) !important;
+    box-shadow: 0 15px 35px -10px rgba(0, 240, 255, 0.2) !important;
+}
+.glass-card-glow-purple:hover {
+    border-color: rgba(168, 85, 247, 0.3) !important;
+    box-shadow: 0 15px 35px -10px rgba(168, 85, 247, 0.2) !important;
+}
+.glass-card-glow-emerald:hover {
+    border-color: rgba(16, 185, 129, 0.3) !important;
+    box-shadow: 0 15px 35px -10px rgba(16, 185, 129, 0.2) !important;
+}
+.glass-card-glow-amber:hover {
+    border-color: rgba(245, 158, 11, 0.3) !important;
+    box-shadow: 0 15px 35px -10px rgba(245, 158, 11, 0.2) !important;
+}
+.glass-card-glow-rose:hover {
+    border-color: rgba(244, 63, 94, 0.3) !important;
+    box-shadow: 0 15px 35px -10px rgba(244, 63, 94, 0.2) !important;
+}
+
+.project-card, .timeline-card, .intern-card, .skills-card, .hire-card {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid var(--border-glass) !important;
+    border-radius: 1.25rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.project-card:hover, .timeline-card:hover, .intern-card:hover, .hire-card:hover {
+    transform: translateY(-6px) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Social buttons styles */
 .social-btn {
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
-    background-color: transparent;
-    border-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    color: var(--text-secondary);
 }
 
 .social-btn:hover {
     transform: scale(1.15);
+    color: #fff !important;
 }
 
 .social-btn-linkedin:hover {
@@ -177,95 +373,138 @@
     border-color: #000 !important;
 }
 
-.form-floating-custom .form-control {
-    border-radius: 0.75rem;
-    transition: all 0.2s ease;
+/* Translucent Inputs */
+.form-floating-custom .form-control, .glass-input {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid var(--border-glass) !important;
+    color: var(--text-primary) !important;
+    border-radius: 0.75rem !important;
+    transition: all 0.25s ease !important;
 }
 
-.form-floating-custom .form-control:focus {
-    border-color: #ffc107 !important;
-    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25) !important;
+.form-floating-custom .form-control:focus, .glass-input:focus {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 240, 255, 0.18) !important;
+    color: #fff !important;
+    outline: none !important;
 }
 
-.hire-card {
-    border-radius: 1rem;
-    transition: transform 0.2s ease;
-}
-
-.hire-card:hover {
-    transform: scale(1.03);
-}
-
+/* Glowing buttons */
 .btn-hover-glow {
     transition: all 0.3s ease;
     border-radius: 0.75rem;
+    font-weight: 600;
 }
 
 .btn-hover-glow:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0.5rem 1.5rem rgba(255, 193, 7, 0.4) !important;
 }
 
-.timeline-card {
-    border-radius: 1rem;
-    transition: transform 0.2s ease;
+.btn-glow-cyan {
+    background: rgba(0, 240, 255, 0.04) !important;
+    border: 1px solid rgba(0, 240, 255, 0.35) !important;
+    color: var(--accent-cyan) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-glow-cyan:hover {
+    background: rgba(0, 240, 255, 0.15) !important;
+    border-color: var(--accent-cyan) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4) !important;
+    transform: translateY(-2px) !important;
 }
 
-.timeline-card:hover {
-    transform: scale(1.01);
+.btn-glow-purple {
+    background: rgba(192, 132, 252, 0.04) !important;
+    border: 1px solid rgba(192, 132, 252, 0.35) !important;
+    color: var(--accent-purple) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-glow-purple:hover {
+    background: rgba(192, 132, 252, 0.15) !important;
+    border-color: var(--accent-purple) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4) !important;
+    transform: translateY(-2px) !important;
 }
 
-.intern-card {
-    border-radius: 1.25rem;
-    transition: all 0.3s ease;
+.btn-glow-emerald {
+    background: rgba(52, 211, 153, 0.04) !important;
+    border: 1px solid rgba(52, 211, 153, 0.35) !important;
+    color: var(--accent-emerald) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-glow-emerald:hover {
+    background: rgba(52, 211, 153, 0.15) !important;
+    border-color: var(--accent-emerald) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(52, 211, 153, 0.4) !important;
+    transform: translateY(-2px) !important;
 }
 
-.intern-card:hover {
-    transform: translateY(-4px);
+.btn-glow-amber {
+    background: rgba(251, 191, 36, 0.04) !important;
+    border: 1px solid rgba(251, 191, 36, 0.35) !important;
+    color: var(--accent-amber) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-glow-amber:hover {
+    background: rgba(251, 191, 36, 0.15) !important;
+    border-color: var(--accent-amber) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.4) !important;
+    transform: translateY(-2px) !important;
 }
 
+.btn-glow-rose {
+    background: rgba(251, 113, 133, 0.04) !important;
+    border: 1px solid rgba(251, 113, 133, 0.35) !important;
+    color: var(--accent-rose) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-glow-rose:hover {
+    background: rgba(251, 113, 133, 0.15) !important;
+    border-color: var(--accent-rose) !important;
+    color: #fff !important;
+    box-shadow: 0 0 20px rgba(251, 113, 133, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Timeline specific styles */
 .timeline-dot {
     width: 18px;
     height: 18px;
     left: -34px;
     top: 6px;
-}
-
-.skills-card {
-    border-radius: 1.25rem;
+    background-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 10px var(--accent-cyan);
 }
 
 .progress-h-10 {
     height: 10px;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.w-pct-1 {
-    width: 1% !important;
+.progress-bar-animated {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.w-pct-2 {
-    width: 2% !important;
-}
-
-.w-pct-30 {
-    width: 30% !important;
-}
-
-.w-pct-70 {
-    width: 70% !important;
-}
-
-.w-pct-85 {
-    width: 85% !important;
-}
-
-.w-pct-90 {
-    width: 90% !important;
-}
+/* Width helper percentages */
+.w-pct-1 { width: 1% !important; }
+.w-pct-2 { width: 2% !important; }
+.w-pct-30 { width: 30% !important; }
+.w-pct-70 { width: 70% !important; }
+.w-pct-85 { width: 85% !important; }
+.w-pct-90 { width: 90% !important; }
 
 .contact-icon-bg {
     width: 50px;
     height: 50px;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid var(--border-glass);
 }
 
 .email-hover {
@@ -273,5 +512,154 @@
 }
 
 .email-hover:hover {
-    color: #0dcaf0 !important;
+    color: var(--accent-cyan) !important;
+}
+
+/* Interactive elements */
+.badge {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.badge.bg-secondary {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid var(--border-glass);
+    color: var(--text-secondary);
+}
+
+/* Glow themes on headings */
+.text-cyan-glow {
+    color: var(--accent-cyan) !important;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+.text-purple-glow {
+    color: var(--accent-purple) !important;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+}
+.text-emerald-glow {
+    color: var(--accent-emerald) !important;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+.text-amber-glow {
+    color: var(--accent-amber) !important;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+.text-rose-glow {
+    color: var(--accent-rose) !important;
+    text-shadow: 0 0 10px rgba(244, 63, 94, 0.2);
+}
+
+/* Sidebar border/avatar targets to avoid inline styling */
+.portfolio-sidebar-brand img {
+    border: 2px solid var(--accent-cyan) !important;
+}
+.portfolio-sidebar-brand h2 {
+    border-color: var(--accent-cyan) !important;
+}
+.portfolio-sidebar-nav .navbar-brand {
+    border-color: var(--border-glass) !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+}
+.card-body .border-top.border-secondary {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+.portfolio-content-col h2.border-bottom {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+.portfolio-content-col .border-start {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Header & Navbar overlays */
+.portfolio-header {
+    background: rgba(10, 15, 30, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.portfolio-navbar {
+    background: rgba(15, 23, 42, 0.7) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.portfolio-home-nav-link {
+    color: var(--text-secondary) !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    background: transparent !important;
+    text-decoration: none;
+}
+.portfolio-home-nav-link:hover {
+    color: var(--accent-cyan) !important;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.4) !important;
+}
+
+/* Home profile picture */
+.profile-img {
+    border: 4px solid var(--accent-cyan) !important;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.25) !important;
+}
+
+/* Textarea glass-input height */
+textarea.glass-input {
+    height: 120px !important;
+}
+
+/* Select element styling */
+select.glass-input {
+    color: var(--text-secondary) !important;
+}
+select.glass-input option {
+    background-color: var(--bg-midnight) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Glow submit buttons */
+.btn-submit-amber {
+    background: linear-gradient(135deg, var(--accent-amber), #d97706) !important;
+    color: #000 !important;
+    border: none !important;
+}
+.btn-submit-amber:hover {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+.btn-submit-rose {
+    background: linear-gradient(135deg, var(--accent-rose), #db2777) !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-submit-rose:hover {
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Landing page logo & items */
+.landing-logo {
+    border: 4px solid var(--accent-cyan) !important;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.25) !important;
+}
+.tech-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Responsive landing page text */
+.landing-title {
+    font-size: clamp(2.2rem, 4vw + 1.2rem, 4.2rem) !important;
+    line-height: 1.25;
+}
+
+.landing-lead {
+    font-size: clamp(1rem, 1vw + 0.6rem, 1.35rem) !important;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-btn {
+    font-size: clamp(0.95rem, 0.8vw + 0.6rem, 1.2rem) !important;
 }

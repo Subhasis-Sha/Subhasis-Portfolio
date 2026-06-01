@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body class="text-bg-light overflow-auto">
+<body class="bg-dark-midnight text-light overflow-auto">
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar Column 1: Brand / Vertical Title -->
             <div class="col-md-1
                         col-12
-                        bg-dark
+                        portfolio-sidebar-brand
                         sticky-top
                         vh-md-100
                         d-flex
@@ -73,7 +73,7 @@
             <!-- Sidebar Column 2: Navigation Links -->
             <div class="col-md-2
                         col-12
-                        bg-warning
+                        portfolio-sidebar-nav
                         vh-md-100
                         sticky-md-top
                         p-0">
@@ -94,7 +94,6 @@
                                   fs-1
                                   mb-md-4
                                   border
-                                  border-success
                                   p-2
                                   text-bg-dark
                                   rounded-pill
@@ -119,28 +118,28 @@
                                         gap-2
                                         py-md-5 py-2
                                         text-center">
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="home.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="home.html">
                                         Home
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100 border border-danger border-2">
-                                    <a class="nav-link text-warning fw-bold" href="project.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link active-emerald" href="project.html">
                                         My Projects
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="skills.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="skills.html">
                                         My Skills
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="journey.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="journey.html">
                                         My Journey
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="contact.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="contact.html">
                                         Contact Me
                                     </a>
                                 </li>
@@ -151,25 +150,25 @@
             </div>
 
             <!-- Content Column 3: Projects Dashboard -->
-            <div class="col-md-9 col-12 bg-success p-4">
-                <h1 class="display-4 fw-bold text-warning-emphasis">
-                    My Projects:
+            <div class="col-md-9 col-12 portfolio-content-col glow-projects p-4 p-md-5">
+                <h1 class="display-4 fw-bold text-emerald-glow">
+                    My Projects
                 </h1>
-                <p class="lead text-dark mt-4 fw-medium">
+                <p class="lead text-secondary mt-4 fw-medium">
                     Explore a showcase of my technical projects spanning DevSecOps pipelines, automated cloud infrastructure, interactive frontend applications, and team-led system utilities. Every project is crafted with security, scalability, and code quality in mind.
                 </p>
 
                 <!-- Responsive Grid Layout -->
                 <div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg project-card">
+                        <div class="card h-100 shadow-lg project-card glass-card-glow-emerald">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="d-flex align-items-center mb-3">
                                         <i class="fa-solid fa-language text-warning fs-3 me-3"></i>
                                         <h3 class="card-title text-info fw-bold mb-0 fs-4">Voice-to-Voice Translator</h3>
                                     </div>
-                                    <p class="card-text text-secondary-emphasis text-light-emphasis small mb-3">
+                                    <p class="card-text text-light-emphasis small mb-3">
                                         Developed during a 1-month Python internship at OKCL. Led a team of 6 members to construct an interactive translation program that captures speech and translates it audibly.
                                     </p>
                                     <h6 class="text-warning fw-bold mb-2">Key Highlights:</h6>
@@ -181,12 +180,12 @@
                                 </div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-1 mb-3">
-                                        <span class="badge bg-primary">Python</span>
-                                        <span class="badge bg-info text-dark">Google Translate API</span>
-                                        <span class="badge bg-danger">Speech Recognition</span>
+                                        <span class="badge bg-secondary">Python</span>
+                                        <span class="badge bg-secondary">Google Translate API</span>
+                                        <span class="badge bg-secondary">Speech Recognition</span>
                                         <span class="badge bg-secondary">Tkinter</span>
                                     </div>
-                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-warning btn-sm fw-bold rounded-pill px-3 shadow-sm">
+                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-glow-cyan btn-sm fw-bold rounded-pill px-3 shadow-sm">
                                         <i class="fa-brands fa-github me-1"></i> View Code
                                     </a>
                                 </div>
@@ -194,7 +193,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg project-card">
+                        <div class="card h-100 shadow-lg project-card glass-card-glow-emerald">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="d-flex align-items-center mb-3">
@@ -213,12 +212,12 @@
                                 </div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-1 mb-3">
-                                        <span class="badge bg-primary">HTML5</span>
-                                        <span class="badge bg-danger">CSS3</span>
-                                        <span class="badge bg-info text-dark">Bootstrap 5</span>
-                                        <span class="badge bg-warning text-dark">JavaScript</span>
+                                        <span class="badge bg-secondary">HTML5</span>
+                                        <span class="badge bg-secondary">CSS3</span>
+                                        <span class="badge bg-secondary">Bootstrap 5</span>
+                                        <span class="badge bg-secondary">JavaScript</span>
                                     </div>
-                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-warning btn-sm fw-bold rounded-pill px-3 shadow-sm">
+                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-glow-cyan btn-sm fw-bold rounded-pill px-3 shadow-sm">
                                         <i class="fa-brands fa-github me-1"></i> View Code
                                     </a>
                                 </div>
@@ -226,7 +225,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg project-card">
+                        <div class="card h-100 shadow-lg project-card glass-card-glow-emerald">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="d-flex align-items-center mb-3">
@@ -245,12 +244,12 @@
                                 </div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-1 mb-3">
-                                        <span class="badge bg-primary">HTML5</span>
-                                        <span class="badge bg-danger">CSS3</span>
-                                        <span class="badge bg-info text-dark">Bootstrap 5</span>
-                                        <span class="badge bg-warning text-dark">JavaScript</span>
+                                        <span class="badge bg-secondary">HTML5</span>
+                                        <span class="badge bg-secondary">CSS3</span>
+                                        <span class="badge bg-secondary">Bootstrap 5</span>
+                                        <span class="badge bg-secondary">JavaScript</span>
                                     </div>
-                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-warning btn-sm fw-bold rounded-pill px-3 shadow-sm">
+                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-glow-cyan btn-sm fw-bold rounded-pill px-3 shadow-sm">
                                         <i class="fa-brands fa-github me-1"></i> View Code
                                     </a>
                                 </div>
@@ -258,7 +257,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg project-card">
+                        <div class="card h-100 shadow-lg project-card glass-card-glow-emerald">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="d-flex align-items-center mb-3">
@@ -277,12 +276,12 @@
                                 </div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-1 mb-3">
-                                        <span class="badge bg-primary">HTML5</span>
-                                        <span class="badge bg-info text-dark">Bootstrap 5</span>
-                                        <span class="badge bg-danger">CSS3</span>
-                                        <span class="badge bg-warning text-dark">Vanta.js</span>
+                                        <span class="badge bg-secondary">HTML5</span>
+                                        <span class="badge bg-secondary">Bootstrap 5</span>
+                                        <span class="badge bg-secondary">CSS3</span>
+                                        <span class="badge bg-secondary">Vanta.js</span>
                                     </div>
-                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-warning btn-sm fw-bold rounded-pill px-3 shadow-sm">
+                                    <a href="https://github.com/Subhasis-Sha" target="_blank" class="btn btn-glow-cyan btn-sm fw-bold rounded-pill px-3 shadow-sm">
                                         <i class="fa-brands fa-github me-1"></i> View Code
                                     </a>
                                 </div>

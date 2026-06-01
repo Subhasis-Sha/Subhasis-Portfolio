@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body class="text-bg-light overflow-auto">
+<body class="bg-dark-midnight text-light overflow-auto">
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar Column 1: Brand / Vertical Title -->
             <div class="col-md-1
                         col-12
-                        bg-dark
+                        portfolio-sidebar-brand
                         sticky-top
                         vh-md-100
                         d-flex
@@ -73,7 +73,7 @@
             <!-- Sidebar Column 2: Navigation Links -->
             <div class="col-md-2
                         col-12
-                        bg-warning
+                        portfolio-sidebar-nav
                         vh-md-100
                         sticky-md-top
                         p-0">
@@ -94,7 +94,6 @@
                                   fs-1
                                   mb-md-4
                                   border
-                                  border-success
                                   p-2
                                   text-bg-dark
                                   rounded-pill
@@ -119,28 +118,28 @@
                                         gap-2
                                         py-md-5 py-2
                                         text-center">
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="home.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="home.html">
                                         Home
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="project.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="project.html">
                                         My Projects
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="skills.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="skills.html">
                                         My Skills
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="journey.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="journey.html">
                                         My Journey
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="contact.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link active-amber" href="contact.html">
                                         Contact Me
                                     </a>
                                 </li>
@@ -151,21 +150,21 @@
             </div>
 
             <!-- Content Column 3: Hire Me Dashboard -->
-            <div class="col-md-9 col-12 bg-primary p-4">
-                <h1 class="display-4 fw-bold text-warning-emphasis">
-                    Hire Me:
+            <div class="col-md-9 col-12 portfolio-content-col glow-hire p-4 p-md-5">
+                <h1 class="display-4 fw-bold text-amber-glow">
+                    Hire Me
                 </h1>
-                <p class="lead text-light mt-4 fw-medium">
+                <p class="lead text-secondary mt-4 fw-medium">
                     Looking for a dedicated professional to secure your pipelines, automate cloud setups, or develop responsive applications? Review my services, engagement models, and submit a brief proposal to initiate our collaboration.
                 </p>
 
                 <!-- Section 1: Value Propositions -->
-                <h2 class="text-warning fw-bold fs-3 mt-4 mb-3 border-bottom border-warning pb-2">Why Hire Me?</h2>
+                <h2 class="text-amber-glow fw-bold fs-3 mt-4 mb-3 border-bottom pb-2">Why Hire Me?</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     
                     <!-- Val Prop 1 -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 p-2 shadow-sm timeline-card">
+                        <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
                                 <i class="fa-solid fa-shield-halved text-info fs-3 mb-3"></i>
                                 <h5 class="card-title fw-bold text-warning">Pipeline Security (DevSecOps)</h5>
@@ -178,7 +177,7 @@
 
                     <!-- Val Prop 2 -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 p-2 shadow-sm timeline-card">
+                        <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
                                 <i class="fa-solid fa-cloud-arrow-up text-info fs-3 mb-3"></i>
                                 <h5 class="card-title fw-bold text-warning">Cloud Automation (IaC)</h5>
@@ -191,7 +190,7 @@
 
                     <!-- Val Prop 3 -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 p-2 shadow-sm timeline-card">
+                        <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
                                 <i class="fa-solid fa-laptop-code text-info fs-3 mb-3"></i>
                                 <h5 class="card-title fw-bold text-warning">Modern Interfaces</h5>
@@ -205,12 +204,12 @@
                 </div>
 
                 <!-- Section 2: Engagement Models -->
-                <h2 class="text-warning fw-bold fs-3 mt-5 mb-3 border-bottom border-warning pb-2">Engagement Models</h2>
+                <h2 class="text-amber-glow fw-bold fs-3 mt-5 mb-3 border-bottom pb-2">Engagement Models</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     
                     <!-- Model 1: Full-Time -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-info h-100 shadow-sm hire-card">
+                        <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <h4 class="card-title text-info fw-bold mb-2">Full-Time Hire</h4>
@@ -224,7 +223,7 @@
                                         <li>Continuous DevOps ownership</li>
                                     </ul>
                                 </div>
-                                <a href="mailto:subhasissha991@gmail.com?subject=Full-Time%20Inquiry" class="btn btn-warning btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
+                                <a href="mailto:subhasissha991@gmail.com?subject=Full-Time%20Inquiry" class="btn btn-glow-cyan btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
                                     Send Inquiry
                                 </a>
                             </div>
@@ -233,7 +232,7 @@
 
                     <!-- Model 2: Freelance -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-info h-100 shadow-sm hire-card">
+                        <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <h4 class="card-title text-info fw-bold mb-2">Freelance / Project</h4>
@@ -247,7 +246,7 @@
                                         <li>Docker container audits</li>
                                     </ul>
                                 </div>
-                                <a href="mailto:subhasissha991@gmail.com?subject=Project%20Inquiry" class="btn btn-warning btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
+                                <a href="mailto:subhasissha991@gmail.com?subject=Project%20Inquiry" class="btn btn-glow-cyan btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
                                     Discuss Project
                                 </a>
                             </div>
@@ -256,7 +255,7 @@
 
                     <!-- Model 3: Consulting -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-info h-100 shadow-sm hire-card">
+                        <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
                                 <div>
                                     <h4 class="card-title text-info fw-bold mb-2">Security Audits</h4>
@@ -270,7 +269,7 @@
                                         <li>Threat analysis workshops</li>
                                     </ul>
                                 </div>
-                                <a href="mailto:subhasissha991@gmail.com?subject=Consulting%20Inquiry" class="btn btn-warning btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
+                                <a href="mailto:subhasissha991@gmail.com?subject=Consulting%20Inquiry" class="btn btn-glow-cyan btn-sm w-100 fw-bold rounded-pill shadow-sm mt-3">
                                     Request Consultation
                                 </a>
                             </div>
@@ -280,9 +279,9 @@
                 </div>
 
                 <!-- Section 3: Proposal Form -->
-                <div class="card bg-dark text-light border border-2 border-warning shadow-lg mt-5 mb-3 skills-card">
+                <div class="card shadow-lg mt-5 mb-3 skills-card glass-card-glow-amber">
                     <div class="card-body p-4">
-                        <h3 class="text-info fw-bold mb-4">
+                        <h3 class="text-amber-glow fw-bold mb-4">
                             <i class="fa-solid fa-file-signature me-2"></i> Submit a Proposal
                         </h3>
                         
@@ -292,7 +291,7 @@
                                 <!-- Company Name -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
-                                        <input type="text" class="form-control bg-dark text-light border-secondary" id="hireCompany" placeholder="Company / Client Name" required>
+                                        <input type="text" class="form-control glass-input" id="hireCompany" placeholder="Company / Client Name" required>
                                         <label for="hireCompany" class="text-secondary">Company / Client Name</label>
                                     </div>
                                 </div>
@@ -300,7 +299,7 @@
                                 <!-- Inquiry Type Selector -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
-                                        <select class="form-select bg-dark text-light border-secondary text-secondary" id="hireType" required>
+                                        <select class="form-select glass-input text-secondary" id="hireType" required>
                                             <option value="" disabled selected>Select Scope...</option>
                                             <option value="fulltime">Full-Time Position</option>
                                             <option value="freelance">Freelance Project</option>
@@ -315,7 +314,7 @@
                                 <!-- Email Address -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
-                                        <input type="email" class="form-control bg-dark text-light border-secondary" id="hireEmail" placeholder="Your Email" required>
+                                        <input type="email" class="form-control glass-input" id="hireEmail" placeholder="Your Email" required>
                                         <label for="hireEmail" class="text-secondary">Your Email Address</label>
                                     </div>
                                 </div>
@@ -323,7 +322,7 @@
                                 <!-- Budget Range Selector -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
-                                        <select class="form-select bg-dark text-light border-secondary text-secondary" id="hireBudget" required>
+                                        <select class="form-select glass-input text-secondary" id="hireBudget" required>
                                             <option value="" disabled selected>Select Budget...</option>
                                             <option value="negotiable">To Be Discussed</option>
                                             <option value="small">Less than $1,000</option>
@@ -337,12 +336,12 @@
 
                             <!-- Proposal Description -->
                             <div class="form-floating mb-4 form-floating-custom">
-                                <textarea class="form-control bg-dark text-light border-secondary" id="hireDescription" placeholder="Job Description / Project Overview" required></textarea>
+                                <textarea class="form-control glass-input" id="hireDescription" placeholder="Job Description / Project Overview" required></textarea>
                                 <label for="hireDescription" class="text-secondary">Job Description / Project Overview</label>
                             </div>
 
                             <!-- Submit Proposal Button -->
-                             <button type="submit" class="btn btn-warning btn-lg rounded-pill w-100 fw-bold shadow-lg py-3 btn-hover-glow">
+                             <button type="submit" class="btn btn-submit-amber btn-lg rounded-pill w-100 fw-bold shadow-lg py-3 btn-hover-glow">
                                 <i class="fa-solid fa-file-signature me-2"></i> Submit Proposal
                             </button>
 

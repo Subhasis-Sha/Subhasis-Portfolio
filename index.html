@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia&display=swap">
     <link rel="icon" type="image/png" href="images/Subhasis_icon.png">
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<body class="bg-dark text-light vh-100" id="vantajs">
+<body class="bg-dark text-light max-vh-100 overflow-hidden" id="vantajs">
     <section class="container-fluid vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="bg-dark bg-opacity-50
-                                border border-info border-opacity-25
-                                rounded-5
-                                shadow-lg
-                                backdrop-filter
-                                p-3 p-md-5
-                                text-center">
+                    <div class="glass-card p-4 p-md-5 text-center">
                         <img src="images/Subhasis_Logo.png"
                             alt="Subhasis Logo"
-                            class="img-fluid rounded-circle border border-5 border-info shadow-lg mb-4"
+                            class="img-fluid rounded-circle shadow-lg mb-4 landing-logo"
                             width="150">
-                        <h1 class="fw-bold text-white fs-2 fs-sm-1 fs-md-1">
-                            Hello There,
-                            <br>
-                            I'm
-                            <span class="text-info d-block d-md-inline-flex align-items-center justify-content-center gap-2" id="nameXproffession">
+                        <h1 class="fw-bold text-white landing-title mb-2">
+                            Hello There, I'm
+                            <span class="text-primary d-block text-center mt-2">
                                 Subhasis Sha
                             </span>
                         </h1>
-                        <p class="lead text-light-emphasis mt-4 fs-6 fs-sm-5 fs-md-4">
+                        <div class="text-center mb-3">
+                            <span class="text-cyan-glow fw-semibold" id="nameXproffession"></span>
+                        </div>
+                        <p class="lead text-light-emphasis mt-4 landing-lead">
                             Passionate DevSecOps Enthusiast
                             focused on Cyber Security,
                             Cloud Infrastructure,
@@ -41,31 +37,18 @@
                             Web Technologies.
                         </p>
                         <a href="templates/home.html"
-                            class="btn
-                                  btn-info
-                                  btn-lg
-                                  rounded-pill
-                                  px-4 px-md-5
-                                  py-2 py-md-3
-                                  fw-bold
-                                  shadow-lg
-                                  fs-6 fs-md-5
-                                  mt-3">
+                            class="btn btn-glow-cyan btn-lg rounded-pill px-4 px-md-5 py-2 py-md-3 mt-3 shadow-lg landing-btn">
                             <i class="fa-solid fa-rocket me-2"></i>
                             Get Started
                         </a>
-                        <div class="d-flex
-                                    justify-content-center
-                                    flex-wrap
-                                    gap-4
-                                    mt-5">
-                            <i class="fa-brands fa-html5 fs-2 fs-md-1 text-danger bg-light p-1" title="HyperText Markup Language"></i>
-                            <i class="fa-brands fa-css3-alt fs-2 fs-md-1 text-primary bg-light p-1" title="Cascading Style Sheet"></i>
-                            <i class="fa-brands fa-js fs-2 fs-md-1 text-warning bg-light p-1" title="JavaScript"></i>
-                            <i class="fa-brands fa-bootstrap fs-2 fs-md-1 text-info bg-light p-1" title="Bootstrap"></i>
-                            <i class="fa-brands fa-python fs-2 fs-md-1 text-success bg-light p-1" title="Python"></i>
-                            <i class="fa-brands fa-linux fs-2 fs-md-1 text-light p-1" title="Linux OS"></i>
-                            <i class="fa-solid fa-shield-halved fs-2 fs-md-1 text-info bg-light p-1" title="Security"></i>
+                        <div class="d-flex justify-content-center flex-wrap gap-3 mt-5">
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="HyperText Markup Language"><i class="fa-brands fa-html5 fs-4 text-danger"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="Cascading Style Sheet"><i class="fa-brands fa-css3-alt fs-4 text-primary"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="JavaScript"><i class="fa-brands fa-js fs-4 text-warning"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="Bootstrap"><i class="fa-brands fa-bootstrap fs-4 text-info"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="Python"><i class="fa-brands fa-python fs-4 text-success"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="Linux OS"><i class="fa-brands fa-linux fs-4 text-light"></i></div>
+                            <div class="d-flex align-items-center justify-content-center bg-dark bg-opacity-25 rounded-circle border tech-circle" title="Security"><i class="fa-solid fa-shield-halved fs-4 text-info"></i></div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body class="text-bg-light overflow-auto">
+<body class="bg-dark-midnight text-light overflow-auto">
     <div class="container-fluid">
         <div class="row">
             <!-- Sidebar Column 1: Brand / Vertical Title -->
             <div class="col-md-1
                         col-12
-                        bg-dark
+                        portfolio-sidebar-brand
                         sticky-top
                         vh-md-100
                         d-flex
@@ -73,7 +73,7 @@
             <!-- Sidebar Column 2: Navigation Links -->
             <div class="col-md-2
                         col-12
-                        bg-warning
+                        portfolio-sidebar-nav
                         vh-md-100
                         sticky-md-top
                         p-0">
@@ -94,7 +94,6 @@
                                   fs-1
                                   mb-md-4
                                   border
-                                  border-success
                                   p-2
                                   text-bg-dark
                                   rounded-pill
@@ -119,28 +118,28 @@
                                         gap-2
                                         py-md-5 py-2
                                         text-center">
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="home.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="home.html">
                                         Home
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="project.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="project.html">
                                         My Projects
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100 border border-danger border-2">
-                                    <a class="nav-link text-warning fw-bold" href="skills.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link active-purple" href="skills.html">
                                         My Skills
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="journey.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="journey.html">
                                         My Journey
                                     </a>
                                 </li>
-                                <li class="nav-item btn btn-dark text-center w-100">
-                                    <a class="nav-link text-danger fw-semibold" href="contact.html">
+                                <li class="portfolio-nav-item">
+                                    <a class="portfolio-nav-link" href="contact.html">
                                         Contact Me
                                     </a>
                                 </li>
@@ -151,11 +150,11 @@
             </div>
 
             <!-- Content Column 3: Skills Dashboard -->
-            <div class="col-md-9 col-12 bg-secondary p-4">
-                <h1 class="display-4 fw-bold text-warning-emphasis">
-                    My Skills:
+            <div class="col-md-9 col-12 portfolio-content-col glow-skills p-4 p-md-5">
+                <h1 class="display-4 fw-bold text-purple-glow">
+                    My Skills
                 </h1>
-                <p class="lead text-dark mt-4 fw-medium">
+                <p class="lead text-secondary mt-4 fw-medium">
                     A comprehensive map of my technical proficiencies and capabilities. Ranging from pipeline automation and vulnerability assessments in DevSecOps to responsive user interface development and scalable cloud architectures.
                 </p>
 
@@ -164,7 +163,7 @@
                     
                     <!-- Card 1: DevSecOps & Cybersecurity -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg skills-card">
+                        <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-shield-halved text-warning me-2"></i> DevSecOps & Security
@@ -222,7 +221,7 @@
 
                     <!-- Card 2: Cloud & Operations -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg skills-card">
+                        <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-cloud text-warning me-2"></i> Cloud & Operations
@@ -281,7 +280,7 @@
 
                     <!-- Card 3: Programming & Scripting -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg skills-card">
+                        <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-code text-warning me-2"></i> Programming & Scripting
@@ -330,7 +329,7 @@
 
                     <!-- Card 4: Frontend Engineering -->
                     <div class="col">
-                        <div class="card bg-dark text-light border border-2 border-warning h-100 shadow-lg skills-card">
+                        <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-laptop-code text-warning me-2"></i> Frontend Engineering

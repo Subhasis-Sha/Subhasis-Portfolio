@@ -34,7 +34,7 @@
                         flex-row flex-md-column
                         justify-content-center
                         align-items-center">
-                <button id="themeBtn" class="fs-1 bg-transparent border-0">
+                <button id="themeBtn" class="fs-1 bg-transparent border-0 mb-md-3">
                     <i id="themeIcon" class="fa-solid fa-toggle-off" style="color: rgb(116, 192, 252);"></i>
                 </button>
                 <a href="../index.html"><img src="../images/Subhasis_Logo.png" alt="Subhasis Logo" class="img-fluid
@@ -42,7 +42,7 @@
                             shadow-lg
                             mb-md-4
                             me-3 me-md-0" width="100"></a>
-                <div class="d-flex text-center align-items-center">
+                <div class="d-none d-md-flex text-center align-items-center">
                     <h2 class="text-warning
                                fw-bold
                                fs-5 
@@ -177,17 +177,20 @@
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
-                                <h3 class="text-info fw-bold mb-4">
+                                <h3 class="text-info fw-bold mb-3">
                                     <i class="fa-solid fa-shield-halved text-warning me-2"></i> DevSecOps & Security
                                 </h3>
+                                <p class="text-secondary small mb-4">
+                                    Focused on shifting security left by integrating automated security scans directly into the CI/CD pipeline. Experienced in executing vulnerability audits using Trivy, monitoring code quality with SonarQube, running dynamic security tests with OWASP ZAP, and hardening Linux servers against unauthorized SSH connections and unauthorized daemon access.
+                                </p>
 
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">CI/CD Pipeline Security (GitHub Actions)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">80%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-80"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -195,10 +198,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Vulnerability Audits (Trivy, OWASP ZAP)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">75%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-75"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -206,10 +209,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Static Code Analysis (SonarQube)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">85%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-85"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -217,10 +220,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Linux Server & SSH Hardening</span>
-                                        <span class="small fw-semibold">2%</span>
+                                        <span class="small fw-semibold">80%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-2"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-80"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -238,17 +241,20 @@
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
-                                <h3 class="text-info fw-bold mb-4">
+                                <h3 class="text-info fw-bold mb-3">
                                     <i class="fa-solid fa-cloud text-warning me-2"></i> Cloud & Operations
                                 </h3>
+                                <p class="text-secondary small mb-4">
+                                    Specialized in provisioning consistent, reproducible infrastructure using Terraform and Ansible. Builds secure containerized runtimes with Docker, handles networking rules (VPCs, security groups), manages remote configurations across cloud instances, and implements backup policies to safeguard application resources.
+                                </p>
 
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Docker & Containerization</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">85%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-85"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -256,10 +262,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Infrastructure as Code (Terraform)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">70%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-70"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -267,10 +273,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Configuration Management (Ansible)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">75%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-75"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -278,10 +284,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">AWS Systems (EC2, S3, RDS, VPC)</span>
-                                        <span class="small fw-semibold">1%</span>
+                                        <span class="small fw-semibold">70%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-70"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -300,9 +306,12 @@
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
-                                <h3 class="text-info fw-bold mb-4">
+                                <h3 class="text-info fw-bold mb-3">
                                     <i class="fa-solid fa-code text-warning me-2"></i> Programming & Scripting
                                 </h3>
+                                <p class="text-secondary small mb-4">
+                                    Proficient in developing modular Python applications, shell scripting, and applying key OOP concepts. Experienced in writing multi-threaded desktop GUI configurations (Tkinter), automation utilities for file transfers/backups, and optimizing backend algorithms for reliable service execution.
+                                </p>
 
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
@@ -318,10 +327,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Bash / Shell Scripting</span>
-                                        <span class="small fw-semibold">30%</span>
+                                        <span class="small fw-semibold">75%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-30"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-75"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -351,9 +360,12 @@
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
-                                <h3 class="text-info fw-bold mb-4">
+                                <h3 class="text-info fw-bold mb-3">
                                     <i class="fa-solid fa-laptop-code text-warning me-2"></i> Frontend Engineering
                                 </h3>
+                                <p class="text-secondary small mb-4">
+                                    Designs fully responsive user interfaces utilizing Bootstrap 5 and clean CSS layouts. Competent in custom web designs, fluid animations, form event management, dynamic client-side interactions with vanilla JavaScript, and matching style themes dynamically.
+                                </p>
 
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
@@ -380,10 +392,10 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">JavaScript (DOM & Integrations)</span>
-                                        <span class="small fw-semibold">2%</span>
+                                        <span class="small fw-semibold">75%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-2"
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-75"
                                             role="progressbar"></div>
                                     </div>
                                 </div>
@@ -400,9 +412,24 @@
                     </div>
 
                 </div>
+
+                <!-- Mobile Footer (Visible on Mobile/Tablet only) -->
+                <footer class="portfolio-mobile-footer d-block d-md-none text-center py-4 mt-5 rounded-3">
+                    <p class="small text-secondary mb-2">© 2026 Subhasis Sha. All rights reserved.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://github.com/Subhasis-Sha" target="_blank" class="text-secondary"><i class="fa-brands fa-github fs-5"></i></a>
+                        <a href="https://www.linkedin.com/in/subhasis-sha-305064325" target="_blank" class="text-primary"><i class="fa-brands fa-linkedin fs-5"></i></a>
+                        <a href="mailto:subhasissha991@gmail.com" class="text-warning"><i class="fa-solid fa-envelope fs-5"></i></a>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn btn" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         onerror="this.onerror=null; this.src='../js/bootstrap.bundle.min.js'"></script>

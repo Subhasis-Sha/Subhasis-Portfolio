@@ -6,7 +6,7 @@
   Layout Architecture:
   - Column 1 (col-md-1): Sidebar brand branding & theme toggle.
   - Column 2 (col-md-2): Sidebar navigation panels (vertical/horizontal dropdowns).
-  - Column 3 (col-md-9): Core content dashboard column (Timeline & Internships) with glowing backdrop filters.
+  - Column 3 (col-md-9): Core content dashboard column (Timeline & Internships) with cyan neon glowing backdrop.
 -->
 
 <head>
@@ -41,23 +41,23 @@
                             shadow-lg
                             mb-md-4
                             me-3 me-md-0" width="100"></a>
-                <div class="d-flex text-center align-items-center">
+                <div class="d-none d-md-flex text-center align-items-center">
                     <h2 class="text-warning
-                               fw-bold
-                               fs-5 
-                               lh-lg
-                               border-end
-                               border-info
-                               mb-0 pe-2">
+                                fw-bold
+                                fs-5 
+                                lh-lg
+                                border-end
+                                border-info
+                                mb-0 pe-2">
                         S<br class="d-none d-md-block">U<br class="d-none d-md-block">B<br
                             class="d-none d-md-block">H<br class="d-none d-md-block">A<br class="d-none d-md-block">S<br
                             class="d-none d-md-block">I<br class="d-none d-md-block">S
                     </h2>
                     <p class="text-info
-                               small
-                               lh-sm
-                               ms-3
-                               mb-0">
+                                small
+                                lh-sm
+                                ms-3
+                                mb-0">
                         D<br class="d-none d-md-block">
                         E<br class="d-none d-md-block">
                         V<br class="d-none d-md-block">
@@ -159,14 +159,17 @@
             </div>
 
             <div class="col-md-9 col-12 portfolio-content-col glow-journey p-4 p-md-5">
-                <button id="sidebarToggle" class="btn p-0">
-                    <i id="toggleIcon" class="fa-solid fa-angle-left"></i>
-                </button>
+                    <button id="sidebarToggle" class="btn p-0">
+                        <i id="toggleIcon" class="fa-solid fa-angle-left"></i>
+                    </button>
                 <h1 class="display-4 fw-bold text-cyan-glow">
                     My Journey
                 </h1>
                 <p class="lead text-secondary mt-4 fw-medium">
-                    I'm Subhasis Sha, a passionate DevSecOps and Cyber Security enthusiast focused on building secure, scalable, and modern digital solutions. My academic journey has taken me from Arts education to Computer Science, where I successfully completed a Diploma in Computer Science Engineering and am currently pursuing my B.Tech. Explore my progress details and experiences below.
+                    I'm Subhasis Sha, a passionate DevSecOps and Cyber Security enthusiast focused on building secure,
+                    scalable, and modern digital solutions. My academic journey has taken me from Arts education to
+                    Computer Science, where I successfully completed a Diploma in Computer Science Engineering and am
+                    currently pursuing my B.Tech. Explore my progress details and experiences below.
                 </p>
 
                 <div class="border-start ps-4 ms-2">
@@ -183,7 +186,10 @@
                                 </div>
                                 <h6 class="text-warning fw-bold mb-2"><a href="https://cgu-odisha.ac.in/" target="_blank">C. V. Raman Global University, Bhubaneswar</a></h6>
                                 <p class="text-secondary small mb-2">Affiliation: CGU, Odisha</p>
-                                <span class="badge bg-secondary">Current Grade: B</span>
+                                <span class="badge bg-secondary mb-2 d-inline-block">Current Grade: B</span>
+                                <p class="text-light-emphasis small mb-0">
+                                    Coursework focuses on core computing disciplines including Database Management Systems (DBMS), Operating Systems theory, Computer Networking protocols, and Information Security. Actively collaborating in university labs to build thread-safe application scripts and cooperating with cross-functional student teams on code audit assignments.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +207,10 @@
                                 </div>
                                 <h6 class="text-warning fw-bold mb-2"><a href="https://nilachalpolytechnic.ac.in/" target="_blank">Nilachal Polytechnic, Bhubaneswar</a></h6>
                                 <p class="text-secondary small mb-2">Affiliation: SCTE & VT, Odisha</p>
-                                <span class="badge bg-secondary">Final Grade: A+</span>
+                                <span class="badge bg-secondary mb-2 d-inline-block">Final Grade: A+</span>
+                                <p class="text-light-emphasis small mb-0">
+                                    Acquired solid foundational concepts in Object-Oriented Programming (OOP) via C++ and Java, Software Engineering lifecycle stages, and Web Technology basics. Developed core academic laboratory projects using standard data structures, designed local database modules, and demonstrated technical leadership during peer programming exercises.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -219,7 +228,10 @@
                                 </div>
                                 <h6 class="text-warning fw-bold mb-2">Jagannath Higher Secondary School, Keonjhar</h6>
                                 <p class="text-secondary small mb-2">Affiliation: CHSE, Odisha</p>
-                                <span class="badge bg-secondary">Final Grade: B</span>
+                                <span class="badge bg-secondary mb-2 d-inline-block">Final Grade: B</span>
+                                <p class="text-light-emphasis small mb-0">
+                                    Completed Higher Secondary education focusing on the humanities. This academic path cultivated strong written communications, critical thinking skills, and a logical approach to text analysis—skills that now serve as a valuable asset when writing technical documentation and developer guides.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +249,10 @@
                                 </div>
                                 <h6 class="text-warning fw-bold mb-2"><a href="https://schools.org.in/keonjhar/21060415403/p-n-h-s-kendukhunta.html" target="_blank">P.N. High School, Keonjhar</a></h6>
                                 <p class="text-secondary small mb-2">Affiliation: BSE, Odisha</p>
-                                <span class="badge bg-secondary">Final Grade: C</span>
+                                <span class="badge bg-secondary mb-2 d-inline-block">Final Grade: C</span>
+                                <p class="text-light-emphasis small mb-0">
+                                    Completed general secondary school studies with solid performance in mathematics, foundational sciences, and history, forming a stable quantitative and logical foundation for subsequent engineering studies.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -257,14 +272,16 @@
                                         </div>
                                         <span class="badge bg-secondary">2 Months</span>
                                     </div>
-                                    <h6 class="text-warning fw-bold mb-2"><a href="https://gvitechnology.com/" target="_blank">GVI Technology</a></h6>
+                                    <h6 class="text-warning fw-bold mb-2"><a href="https://gvitechnology.com/"
+                                            target="_blank">GVI Technology</a></h6>
                                     <p class="text-light-emphasis small mb-3">
-                                        Designed and developed responsive web pages using modern UI/UX practices.
+                                        Worked with a development team to build and maintain responsive frontend layouts. Translated static Figma designs into responsive HTML5/CSS3 templates, utilized Bootstrap grid classes to optimize layout alignment across viewport sizes, and participated in regular Git pull request workflows to resolve interface conflicts.
                                     </p>
-                                    
+
                                     <h6 class="text-light fw-bold small mb-1">Projects:</h6>
-                                    <p class="text-secondary small mb-2">Fishery Website, Hospital Management Website, Personal Portfolio Website</p>
-                                    
+                                    <p class="text-secondary small mb-2">Fishery Website, Hospital Management Website,
+                                        Personal Portfolio Website</p>
+
                                 </div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-1">
@@ -289,11 +306,12 @@
                                         </div>
                                         <span class="badge bg-secondary">1 Month</span>
                                     </div>
-                                    <h6 class="text-warning fw-bold mb-2"><a href="https://okcl.org/" target="_blank">OKCL (Odisha Knowledge Corporation Ltd.)</a></h6>
+                                    <h6 class="text-warning fw-bold mb-2"><a href="https://okcl.org/"
+                                            target="_blank">OKCL (Odisha Knowledge Corporation Ltd.)</a></h6>
                                     <p class="text-light-emphasis small mb-3">
-                                        Led a team of 6 members to design and develop a GUI-based Voice-to-Voice Language Translator.
+                                        Led a 6-member intern team to construct a multi-threaded Python desktop translator. Handled API requests for cross-language translation services, implemented scheduling mechanisms in a Tkinter GUI window to prevent UI freezing, built exception handling for network interruptions, and scheduled tasks using Git branches.
                                     </p>
-                                    
+
                                     <h6 class="text-light fw-bold small mb-1">Projects:</h6>
                                     <p class="text-secondary small mb-2">Voice to Voice Language Translator</p>
                                 </div>
@@ -309,11 +327,23 @@
                         </div>
                     </div>
 
-                </div>
-
+                <!-- Mobile Footer (Visible on Mobile/Tablet only) -->
+                <footer class="portfolio-mobile-footer d-block d-md-none text-center py-4 mt-5 rounded-3">
+                    <p class="small text-secondary mb-2">© 2026 Subhasis Sha. All rights reserved.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://github.com/Subhasis-Sha" target="_blank" class="text-secondary"><i class="fa-brands fa-github fs-5"></i></a>
+                        <a href="https://www.linkedin.com/in/subhasis-sha-305064325" target="_blank" class="text-primary"><i class="fa-brands fa-linkedin fs-5"></i></a>
+                        <a href="mailto:subhasissha991@gmail.com" class="text-warning"><i class="fa-solid fa-envelope fs-5"></i></a>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn btn" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         onerror="this.onerror=null; this.src='../js/bootstrap.bundle.min.js'"></script>

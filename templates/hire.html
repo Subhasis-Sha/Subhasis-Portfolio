@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
+<!--
+  Subhasis Sha - Developer Portfolio: Hire Me Page
+  
+  Layout Architecture:
+  - Column 1 (col-md-1): Sidebar brand branding & theme toggle.
+  - Column 2 (col-md-2): Sidebar navigation panels (vertical/horizontal dropdowns).
+  - Column 3 (col-md-9): Core content dashboard column (Professional Service Offering & Booking Form) with amber neon glowing backdrop.
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -13,10 +21,9 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body class="bg-dark-midnight text-light overflow-auto">
+<body id="body" class="bg-dark-midnight overflow-auto">
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar Column 1: Brand / Vertical Title -->
             <div class="col-md-1
                         col-12
                         portfolio-sidebar-brand
@@ -26,11 +33,14 @@
                         flex-row flex-md-column
                         justify-content-center
                         align-items-center">
-                <img src="../images/Subhasis_Logo.png" alt="Subhasis Logo" class="img-fluid
+                <button id="themeBtn" class="fs-1 bg-transparent border-0 mb-md-3">
+                    <i id="themeIcon" class="fa-solid fa-toggle-off" style="color: rgb(116, 192, 252);"></i>
+                </button>
+                <a href="../index.html"><img src="../images/Subhasis_Logo.png" alt="Subhasis Logo" class="img-fluid
                             rounded-circle
                             shadow-lg
                             mb-md-4
-                            me-3 me-md-0" width="100">
+                            me-3 me-md-0" width="100"></a>
                 <div class="d-flex text-center align-items-center">
                     <h2 class="text-warning
                                fw-bold
@@ -70,7 +80,6 @@
                 </div>
             </div>
 
-            <!-- Sidebar Column 2: Navigation Links -->
             <div class="col-md-2
                         col-12
                         portfolio-sidebar-nav
@@ -149,8 +158,10 @@
                 </nav>
             </div>
 
-            <!-- Content Column 3: Hire Me Dashboard -->
             <div class="col-md-9 col-12 portfolio-content-col glow-hire p-4 p-md-5">
+                <button id="sidebarToggle" class="btn p-0">
+                    <i id="toggleIcon" class="fa-solid fa-angle-left"></i>
+                </button>
                 <h1 class="display-4 fw-bold text-amber-glow">
                     Hire Me
                 </h1>
@@ -158,11 +169,8 @@
                     Looking for a dedicated professional to secure your pipelines, automate cloud setups, or develop responsive applications? Review my services, engagement models, and submit a brief proposal to initiate our collaboration.
                 </p>
 
-                <!-- Section 1: Value Propositions -->
-                <h2 class="text-amber-glow fw-bold fs-3 mt-4 mb-3 border-bottom pb-2">Why Hire Me?</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                     
-                    <!-- Val Prop 1 -->
                     <div class="col">
                         <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
@@ -175,7 +183,6 @@
                         </div>
                     </div>
 
-                    <!-- Val Prop 2 -->
                     <div class="col">
                         <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
@@ -188,7 +195,6 @@
                         </div>
                     </div>
 
-                    <!-- Val Prop 3 -->
                     <div class="col">
                         <div class="card h-100 p-2 shadow-sm timeline-card glass-card-glow-amber">
                             <div class="card-body">
@@ -203,11 +209,8 @@
 
                 </div>
 
-                <!-- Section 2: Engagement Models -->
                 <h2 class="text-amber-glow fw-bold fs-3 mt-5 mb-3 border-bottom pb-2">Engagement Models</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-3">
-                    
-                    <!-- Model 1: Full-Time -->
                     <div class="col">
                         <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
@@ -230,7 +233,6 @@
                         </div>
                     </div>
 
-                    <!-- Model 2: Freelance -->
                     <div class="col">
                         <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
@@ -253,7 +255,6 @@
                         </div>
                     </div>
 
-                    <!-- Model 3: Consulting -->
                     <div class="col">
                         <div class="card h-100 shadow-sm hire-card glass-card-glow-amber">
                             <div class="card-body p-4 d-flex flex-column justify-content-between">
@@ -278,7 +279,6 @@
 
                 </div>
 
-                <!-- Section 3: Proposal Form -->
                 <div class="card shadow-lg mt-5 mb-3 skills-card glass-card-glow-amber">
                     <div class="card-body p-4">
                         <h3 class="text-amber-glow fw-bold mb-4">
@@ -288,7 +288,6 @@
                         <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Your proposal has been submitted! Subhasis will review the details and respond shortly.'); this.reset();">
                             
                             <div class="row">
-                                <!-- Company Name -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
                                         <input type="text" class="form-control glass-input" id="hireCompany" placeholder="Company / Client Name" required>
@@ -296,7 +295,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Inquiry Type Selector -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
                                         <select class="form-select glass-input text-secondary" id="hireType" required>
@@ -311,7 +309,6 @@
                             </div>
 
                             <div class="row">
-                                <!-- Email Address -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
                                         <input type="email" class="form-control glass-input" id="hireEmail" placeholder="Your Email" required>
@@ -319,7 +316,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Budget Range Selector -->
                                 <div class="col-md-6 col-12 mb-3">
                                     <div class="form-floating form-floating-custom">
                                         <select class="form-select glass-input text-secondary" id="hireBudget" required>
@@ -334,13 +330,11 @@
                                 </div>
                             </div>
 
-                            <!-- Proposal Description -->
                             <div class="form-floating mb-4 form-floating-custom">
                                 <textarea class="form-control glass-input" id="hireDescription" placeholder="Job Description / Project Overview" required></textarea>
                                 <label for="hireDescription" class="text-secondary">Job Description / Project Overview</label>
                             </div>
 
-                            <!-- Submit Proposal Button -->
                              <button type="submit" class="btn btn-submit-amber btn-lg rounded-pill w-100 fw-bold shadow-lg py-3 btn-hover-glow">
                                 <i class="fa-solid fa-file-signature me-2"></i> Submit Proposal
                             </button>
@@ -353,7 +347,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap Bundle with Popper -->
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         onerror="this.onerror=null; this.src='../js/bootstrap.bundle.min.js'"></script>
 </body>

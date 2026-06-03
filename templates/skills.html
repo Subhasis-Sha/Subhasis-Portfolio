@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
+<!--
+  Subhasis Sha - Developer Portfolio: Skills Page
+  
+  Layout Architecture:
+  - Column 1 (col-md-1): Sidebar brand branding & theme toggle.
+  - Column 2 (col-md-2): Sidebar navigation panels (vertical/horizontal dropdowns).
+  - Column 3 (col-md-9): Core content dashboard column (Skills & Competencies Metrics Cards) with purple neon glowing backdrop.
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subhasis | Portfolio--Skills</title>
-    <link class="stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    <link class="stylesheet" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         onerror="this.onerror=null; this.href='../static/bootstrap.min.css'">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,10 +22,9 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 
-<body class="bg-dark-midnight text-light overflow-auto">
+<body id="body" class="bg-dark-midnight overflow-auto">
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar Column 1: Brand / Vertical Title -->
             <div class="col-md-1
                         col-12
                         portfolio-sidebar-brand
@@ -26,11 +34,14 @@
                         flex-row flex-md-column
                         justify-content-center
                         align-items-center">
-                <img src="../images/Subhasis_Logo.png" alt="Subhasis Logo" class="img-fluid
+                <button id="themeBtn" class="fs-1 bg-transparent border-0">
+                    <i id="themeIcon" class="fa-solid fa-toggle-off" style="color: rgb(116, 192, 252);"></i>
+                </button>
+                <a href="../index.html"><img src="../images/Subhasis_Logo.png" alt="Subhasis Logo" class="img-fluid
                             rounded-circle
                             shadow-lg
                             mb-md-4
-                            me-3 me-md-0" width="100">
+                            me-3 me-md-0" width="100"></a>
                 <div class="d-flex text-center align-items-center">
                     <h2 class="text-warning
                                fw-bold
@@ -70,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Sidebar Column 2: Navigation Links -->
             <div class="col-md-2
                         col-12
                         portfolio-sidebar-nav
@@ -149,33 +159,36 @@
                 </nav>
             </div>
 
-            <!-- Content Column 3: Skills Dashboard -->
             <div class="col-md-9 col-12 portfolio-content-col glow-skills p-4 p-md-5">
+                <button id="sidebarToggle" class="btn p-0">
+                    <i id="toggleIcon" class="fa-solid fa-angle-left"></i>
+                </button>
                 <h1 class="display-4 fw-bold text-purple-glow">
                     My Skills
                 </h1>
                 <p class="lead text-secondary mt-4 fw-medium">
-                    A comprehensive map of my technical proficiencies and capabilities. Ranging from pipeline automation and vulnerability assessments in DevSecOps to responsive user interface development and scalable cloud architectures.
+                    A comprehensive map of my technical proficiencies and capabilities. Ranging from pipeline automation
+                    and vulnerability assessments in DevSecOps to responsive user interface development and scalable
+                    cloud architectures.
                 </p>
 
-                <!-- Grid Split: Skill Groups -->
                 <div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
-                    
-                    <!-- Card 1: DevSecOps & Cybersecurity -->
+
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-shield-halved text-warning me-2"></i> DevSecOps & Security
                                 </h3>
-                                
+
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">CI/CD Pipeline Security (GitHub Actions)</span>
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -185,7 +198,8 @@
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -195,7 +209,8 @@
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -205,7 +220,8 @@
                                         <span class="small fw-semibold">2%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-2" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-2"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -219,21 +235,21 @@
                         </div>
                     </div>
 
-                    <!-- Card 2: Cloud & Operations -->
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-cloud text-warning me-2"></i> Cloud & Operations
                                 </h3>
-                                
+
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Docker & Containerization</span>
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -243,7 +259,8 @@
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -253,7 +270,8 @@
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -263,7 +281,8 @@
                                         <span class="small fw-semibold">1%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-1"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -278,21 +297,21 @@
                         </div>
                     </div>
 
-                    <!-- Card 3: Programming & Scripting -->
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-code text-warning me-2"></i> Programming & Scripting
                                 </h3>
-                                
+
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">Python Programming</span>
                                         <span class="small fw-semibold">85%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-85" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-85"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -302,7 +321,8 @@
                                         <span class="small fw-semibold">30%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-30" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-30"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -312,7 +332,8 @@
                                         <span class="small fw-semibold">70%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-70" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary w-pct-70"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -327,21 +348,21 @@
                         </div>
                     </div>
 
-                    <!-- Card 4: Frontend Engineering -->
                     <div class="col">
                         <div class="card h-100 shadow-lg skills-card glass-card-glow-purple">
                             <div class="card-body p-4">
                                 <h3 class="text-info fw-bold mb-4">
                                     <i class="fa-solid fa-laptop-code text-warning me-2"></i> Frontend Engineering
                                 </h3>
-                                
+
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between mb-1">
                                         <span class="small fw-semibold">HTML5 & CSS3 Structuring</span>
                                         <span class="small fw-semibold">90%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-90" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-pct-90"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -351,7 +372,8 @@
                                         <span class="small fw-semibold">90%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-90" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-pct-90"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -361,7 +383,8 @@
                                         <span class="small fw-semibold">2%</span>
                                     </div>
                                     <div class="progress bg-secondary bg-opacity-50 progress-h-10">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-2" role="progressbar"></div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-pct-2"
+                                            role="progressbar"></div>
                                     </div>
                                 </div>
 
@@ -380,8 +403,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap Bundle with Popper -->
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         onerror="this.onerror=null; this.src='../js/bootstrap.bundle.min.js'"></script>
 </body>

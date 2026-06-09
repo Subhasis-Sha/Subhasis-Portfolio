@@ -46,8 +46,10 @@
 
 [data-bs-theme="light"] {
     --bg-midnight: #f8fafc;
-    --bg-sidebar-1: #ffffff; /* Clean white for brand sidebar */
-    --bg-sidebar-2: #f8fafc; /* Soft light slate for navigation sidebar */
+    --bg-sidebar-1: #ffffff;
+    /* Clean white for brand sidebar */
+    --bg-sidebar-2: #f8fafc;
+    /* Soft light slate for navigation sidebar */
     --card-bg: rgba(255, 255, 255, 0.85);
     --border-glass: rgba(0, 0, 0, 0.08);
     --border-hover: rgba(0, 0, 0, 0.15);
@@ -73,8 +75,10 @@
     --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
 
     /* Navbar & header layout tokens (light mode overrides) */
-    --bg-header: rgba(255, 255, 255, 0.85); /* Frosted light header background */
-    --bg-navbar: rgba(255, 255, 255, 0.85); /* Frosted light navbar */
+    --bg-header: rgba(255, 255, 255, 0.85);
+    /* Frosted light header background */
+    --bg-navbar: rgba(255, 255, 255, 0.85);
+    /* Frosted light navbar */
     --border-navbar: rgba(0, 0, 0, 0.08);
 }
 
@@ -552,49 +556,6 @@ body {
     transform: translateY(-2px) !important;
 }
 
-.btn-glow-emerald {
-    background: rgba(52, 211, 153, 0.04) !important;
-    border: 1px solid rgba(52, 211, 153, 0.35) !important;
-    color: var(--accent-emerald) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.btn-glow-emerald:hover {
-    background: var(--accent-emerald) !important;
-    border-color: var(--accent-emerald) !important;
-    color: #fff !important;
-    box-shadow: 0 0 20px rgba(52, 211, 153, 0.4) !important;
-    transform: translateY(-2px) !important;
-}
-
-.btn-glow-amber {
-    background: rgba(251, 191, 36, 0.04) !important;
-    border: 1px solid rgba(251, 191, 36, 0.35) !important;
-    color: var(--accent-amber) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.btn-glow-amber:hover {
-    background: var(--accent-amber) !important;
-    border-color: var(--accent-amber) !important;
-    color: #fff !important;
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.4) !important;
-    transform: translateY(-2px) !important;
-}
-
-.btn-glow-rose {
-    background: rgba(251, 113, 133, 0.04) !important;
-    border: 1px solid rgba(251, 113, 133, 0.35) !important;
-    color: var(--accent-rose) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-.btn-glow-rose:hover {
-    background: var(--accent-rose) !important;
-    border-color: var(--accent-rose) !important;
-    color: #fff !important;
-    box-shadow: 0 0 20px rgba(251, 113, 133, 0.4) !important;
-}
 
 .btn-outline-theme {
     background: transparent !important;
@@ -715,7 +676,8 @@ body {
 
 .portfolio-sidebar-nav .navbar-brand {
     border-color: var(--border-glass) !important;
-    background: rgba(255, 255, 255, 0.03) !important;
+    background-color: var(--bs-warning, #ffc107) !important;
+    color: #0b0f19 !important;
 }
 
 .card-body .border-top.border-secondary {
@@ -985,13 +947,19 @@ body.sidebar-collapsed #sidebarToggle {
     left: 0;
 }
 
-/* Mobile Footer styling */
-.portfolio-mobile-footer {
+/* Footer styling */
+.portfolio-footer {
     background-color: rgba(0, 0, 0, 0.15);
     border-top: 1px solid var(--border-glass);
 }
-[data-bs-theme="light"] .portfolio-mobile-footer {
+[data-bs-theme="light"] .portfolio-footer {
     background-color: rgba(0, 0, 0, 0.02);
+}
+.portfolio-footer a.hover-cyan {
+    transition: color 0.2s ease-in-out;
+}
+.portfolio-footer a.hover-cyan:hover {
+    color: var(--accent-cyan) !important;
 }
 
 /* Landing page height responsiveness */
